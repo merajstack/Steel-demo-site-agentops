@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const WEBHOOK_URL = "https://workflow.ccbp.in/webhook/business-inquiry";
-const MANAGER_EMAIL = "meraj.md5862@gmail.com";
+const MANAGER_EMAIL = "navaneesh09@gmail.com";
 const BOT_AVATAR_URL = "/assets/chatbot-avatar.svg";
 
 const emptyFields = {
