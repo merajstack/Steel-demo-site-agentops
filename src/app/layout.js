@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
-import BusinessChatbot from "@/components/BusinessChatbot";
+import Script from "next/script";
+
 import "./globals.css";
 
 const inter = Inter({
@@ -18,7 +19,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {children}
-        <BusinessChatbot />
+        <Script
+          src="https://agentops-auto.vercel.app/widget.js"
+          data-type="business-inquiry"
+          data-manager-email="navaneesh09@gmail.com"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
